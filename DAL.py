@@ -27,3 +27,5 @@ class DAL:
                         first_name = first_name,
                         last_name = last_name,
                         email = email)
+        self.session.add(new_user)
+        self.session.commit()

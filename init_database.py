@@ -1,9 +1,8 @@
 __author__ = 'Gergo'
 
 from sqlalchemy import create_engine
-from sqlalchemy.ext.declarative import declarative_base
 
-BaseClass = declarative_base()
+from BaseClass import BaseClass
 
 
 def init(engine):
