@@ -1,10 +1,9 @@
-__author__ = 'Gergo'
+__author__ = 'greg'
 
 from sqlalchemy import Column, String, Integer, ForeignKey
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import relationship
+from sqlalchemy.orm import relationship, backref
 
-BaseClass = declarative_base()
+from BaseClass import BaseClass
 
 class User(BaseClass):
     __tablename__ = 'users'
@@ -13,4 +12,4 @@ class User(BaseClass):
     last_name = Column(String(150))
     email = Column(String(250))
 
-    bids = relationship('Bid', backref='user')
+    bids = relationship('Bid')
