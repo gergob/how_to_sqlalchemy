@@ -1,7 +1,6 @@
-__author__ = 'Gergo'
+__author__ = 'greg'
 
 from sqlalchemy import create_engine
-
 from BaseClass import BaseClass
 
 

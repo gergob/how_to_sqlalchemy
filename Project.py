@@ -1,12 +1,9 @@
 __author__ = 'greg'
 
 from sqlalchemy import Column, String, Integer, ForeignKey, Numeric
-
 from sqlalchemy.orm import relationship, backref
 
-
 from BaseClass import BaseClass
-
 
 
 class Project(BaseClass):
